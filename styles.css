@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+}
+
+.container .nav {
+    max-width: 75%;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .nav .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .nav .logo img {
+    height: 35px;
+}
+
+.container .nav .logo p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 0.7rem;
+}
+
+.container .nav .nav-button a {
+    background: rgba(255, 97, 80, 0.09);
+    color: #ff6150;
+    padding: 0.9rem 2rem;
+    font-weight: 600;
+    border-radius: 6.32659px;
+    transition: all 1s;
+}
+
+.container .nav .nav-button a:hover {
+    background: rgba(250, 45, 22, 0.2);
+    color: #ff6150;
+}
+
+.container .content {
+    max-width: 75%;
+    margin: 8rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 8rem;
+}
+
+.container .content .text,
+.container .content .hero {
+    position: relative;
+}
+
+.container .content .text img {
+    position: absolute;
+    top: 1rem;
+    left: -1rem;
+    z-index: -1;
+}
+
+.container .content .text h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5.8rem;
+}
+
+.container .content .text h1 span {
+    color: #ff6150;
+}
+
+.container .content .text p {
+    font-size: 1.05rem;
+    margin: 2rem 0 4rem;
+}
+
+.container .content .text a {
+    background: #ff6150;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+    border-radius: 6.4375px;
+    font-weight: 600;
+    border-radius: 6.32659px;
+    transition: all 1s;
+}
+
+.container .content .text a:hover {
+    background: #f8aaa2;
+}
+
+.container .hero .first-dots {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0.8rem;
+    position: absolute;
+    top: -2.9rem;
+    right: -6.8rem;
+    z-index: -1;
+}
+
+.container .hero .hero-img {
+    max-width: 100%;
+}
+
+.container .hero .hero-img img {
+    width: 99%;
+}
+
+.container .hero .second-dots {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0.8rem;
+    position: absolute;
+    bottom: -2.5rem;
+    left: -4.4rem;
+    right: 0;
+    z-index: -1;
+}
+
+.container .hero .shapes {
+    background: #072448;
+    width: 25.6rem;
+    height: 27.8rem;
+    position: absolute;
+    top: 13.5rem;
+    right: -10.6rem;
+    z-index: -1;
+}
+
+.container .shapes .blue {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.container .shapes .yellow {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+.container .shapes .orange {
+    position: absolute;
+    top: 7.8rem;
+    right: 2rem;
+    z-index: 1;
+}
+
+.container .shapes .lightorange {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    z-index: 1;
+}
+
+
+@media (max-width: 1200px){
+    .container .nav {
+        max-width: 85%
+    }
+
+    .container .content {
+        max-width: 85%;
+        margin: 8rem auto;
+        grid-gap: 6rem;
+    }
+
+    .container .content .text img {
+        top: 0.5rem;
+        left: -1.2rem;
+        width: 35px;
+    }
+
+    .container .content .text h1 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+
+
+    .container .content .text p {
+        font-size: 1rem;
+        margin: 1.8rem 0 3rem;
+    }
+
+    .container .hero .first-dots {
+        grid-gap: 0.6rem;
+        top: -3.7rem;
+        right: -3.5rem;
+    }
+
+    .container .hero .hero-img {
+        max-width: 100%;
+    }
+
+    .container .hero .hero-img img {
+        width: 99%;
+    }
+
+    .container .hero .second-dots {
+        grid-gap: 0.6rem;
+        bottom: -2.2rem;
+        left: -3.7rem;
+    }
+
+    .container .hero .shapes {
+        width: 24rem;
+        height: 25rem;
+        position: absolute;
+        top: 15rem;
+        right: -5.5rem;
+    }
+
+    .container .shapes .blue {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 11rem;
+    }
+
+    .container .shapes .yellow {
+        top: 1.5rem;
+        right: 1rem;
+        width: 7rem;
+    }
+
+    .container .shapes .orange {
+        position: absolute;
+        top: 7rem;
+        right: 2rem;
+        width: 7rem;
+    }
+
+    .container .shapes .lightorange {
+        position: absolute;
+        bottom: 0;
+        left: 2.5rem;
+        width: 10rem;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .container .hero .shapes {
+        width: 20rem;
+        height: 20rem;
+        position: absolute;
+        top: 15rem;
+        right: -4.3rem;
+    }
+
+    .container .shapes .blue {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 9rem;
+    }
+
+    .container .shapes .yellow {
+        top: 1rem;
+        right: 0.5rem;
+        width: 6rem;
+    }
+
+    .container .shapes .orange {
+        position: absolute;
+        top: 6rem;
+        right: 1rem;
+        width: 6rem;
+    }
+
+    .container .shapes .lightorange {
+        position: absolute;
+        bottom: 0;
+        left: 2.5rem;
+        width: 7rem;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .container .nav {
+        max-width: 85%;
+    }
+
+    .container .nav .logo img {
+        height: 35px;
+    }
+
+    .container .nav .logo p {
+        font-size: 1.1rem;
+    }
+
+    .container .nav .nav-button a,
+    .container .content .text a {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.8rem;
+    }
+
+    .container .content {
+        max-width: 85%;
+        margin: 6rem auto 0;
+        grid-gap: 5rem;
+    }
+
+    .container .content .text img {
+        top: 0.3rem;
+        left: -0.7rem;
+        width: 25px;
+    }
+
+    .container .content .text h1 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    .container .content .text p {
+        font-size: 0.9rem;
+        margin: 1.5rem 0 3rem;
+    }
+
+    .container .hero .first-dots {
+        grid-gap: 0.4rem;
+        top: -2.5rem;
+        right: -2rem;
+    }
+
+    .container .hero .second-dots {
+        grid-gap: 0.4rem;
+        bottom: -2.5rem;
+        left: -3.2rem;
+        right: 0;
+        z-index: -1;
+    }
+
+    .container .hero .shapes {
+       display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .container .nav {
+        max-width: 100%;
+        margin: 1.5rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container .nav .logo {
+        margin-bottom: 2rem;
+    }
+
+    .container .content {
+        max-width: 90%;
+        margin: 8rem auto 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container .content .text h1 {
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: unset;
+    }
+
+    .container .content .text p {
+        font-size: 1rem;
+        margin: 1rem 0 2rem;
+    }
+
+    .container .content .text img {
+        display: none;
+    }
+
+    .container .hero .first-dots {
+        grid-gap: 0.5rem;
+        top: -3rem;
+        left: -1rem;
+        right: 0;
+    }
+
+    .container .hero .hero-img {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .container .hero .hero-img img {
+        width: 100%;
+    }
+
+    .container .hero .second-dots {
+        grid-gap: 0.5rem;
+        bottom: -3rem;
+        left: unset;
+        right: -1rem;
+    }
+
+    .container .hero .shapes {
+        display: none;
+    }
+}
+
