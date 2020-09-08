@@ -94,6 +94,7 @@ a {
 .container .content .text p {
     font-size: 1.05rem;
     margin: 2rem 0 4rem;
+    line-height: 1.5;
 }
 
 .container .content .text a {
@@ -387,7 +388,7 @@ a {
     }
 
     .container .content .text{
-        margin: 3rem 0;
+        margin: 5rem 0 3rem;
     }
 
     .container .content .text h1 {
